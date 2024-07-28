@@ -1,0 +1,529 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: barlow, sans-serif;
+}
+
+.main-container{
+    overflow-x: hidden;
+}
+
+.header{
+    background: url("images/desktop/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    height: 10vh;
+    position: relative;
+}
+
+.logo{
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav-menu{
+    display: flex;
+    transition: all 0.4s ease-in;
+}
+
+.nav-menu:hover{
+    cursor: pointer;
+}
+
+.nav-menu ul{
+    display: flex;
+    padding-right: 30px;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-menu ul li{
+    list-style: none;
+    color: #fff;
+}
+
+.nav-menu button{
+    border: none;
+    outline: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.nav-menu button:hover{
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+}
+
+.header .heading h1{
+    color: #fff;
+    font-size: 62px;
+    font-family: Fraunces, sans-serif;
+    margin-left: 25rem;
+    margin-top: 5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.arrow-down{
+    position: absolute;
+    left: 46rem;
+    top: 18rem;
+}
+
+/* transform section */
+.transform-container{
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+}
+
+.transform-text{
+    max-width: 1000px;
+    margin-top: 12rem;
+}
+
+.transform-text h2{
+    margin-bottom: 2rem;
+    font-family: Fraunces, sans-serif;
+    margin-left: 12rem;
+    font-size: 38px;
+    font-weight: bold;
+    color:  hsl(212, 27%, 19%);
+}
+
+.transform-text p{
+    width: 400px;
+    margin-left: 12rem;
+    margin-bottom: 1.5rem;
+    color: hsl(210, 4%, 67%);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.transform-text a{
+    margin-left: 12rem;
+    text-decoration: none;
+    font-family: Fraunces, sans-serif;
+    color:  hsl(212, 27%, 19%);
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 3px 5px 5px  hsl(48, 100%, 65%);
+}
+
+.transform-img img{
+    width: 51.3vw;
+    height: 600px;
+}
+
+/* standout section */
+.standOut-container{
+    display: flex;
+    width: 100%;
+}
+
+.standout-img img{
+    width: 720px;
+    height: 600px;
+}
+
+.standout-text{
+ margin-left: 12rem;
+ margin-top: 12rem;
+ width: 400px;
+}
+
+.standout-text h2{
+ font-family: Fraunces, sans-serif;
+margin-bottom: 2rem;
+}
+
+.standout-text p{
+    margin-bottom: 1.5rem;
+    color: hsl(210, 4%, 67%);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.standout-text a{
+    text-decoration: none;
+    font-family: Fraunces, sans-serif;
+    color:  hsl(212, 27%, 19%);
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 2px 8px 8px hsl(7, 99%, 70%);
+}
+
+/* images section  left side*/
+.image-container{
+    display: flex;
+    position: relative;
+    top: -1rem;
+}
+
+.graphics-content img{
+    height: 600px;
+}
+
+.graphics-text{
+    position: absolute;
+    top: 25rem;
+    width: 400px;
+    margin-left: 10rem;
+    text-align: center;
+}
+
+.graphics-text h3{
+    color: hsl(167, 40%, 24%);
+    font-size: 32px;
+    font-family: Fraunces, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.graphics-text p{
+    color: hsl(232, 10%, 55%);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* images section  right side*/
+.photgraphy-content img{
+     width: 800px;
+     height: 600px;
+}
+
+.photgraphy-text{
+    position: absolute;
+    top: 25rem;
+    width: 400px;
+    margin-left: 12rem;
+    text-align: center;
+}
+
+.photgraphy-text h3{
+    color: hsl(167, 40%, 24%);
+    font-size: 32px;
+    font-family: Fraunces, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.photgraphy-text p{
+    color: hsl(232, 10%, 55%);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* Testimonials */
+
+.testimonial-container h3{
+    font-size: 24px;
+    text-align: center;
+    font-family: Fraunces, sans-serif;
+    color: hsl(210, 4%, 67%);
+    margin: 8rem 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.testimonial-container .client-test{
+    display: flex;
+    width: 100%;
+    margin: 0rem 2rem;
+}
+
+.Emily-R,
+.Thomas-S,
+.Jennie-F{
+    width: 400px;
+    margin-bottom: 8rem;
+    margin-left: 4rem;
+}
+.Emily-R img, .Thomas-S img,
+.Jennie-F img{
+    border-radius: 50%;
+    width: 70px;
+    margin-left: 11rem;
+    margin-bottom: 3rem;
+}
+
+.Emily-R .text,
+.Thomas-S .text,
+.Jennie-F .text{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: hsl(232, 10%, 55%);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+.Emily-R h4,
+.Thomas-S h4,
+.Jennie-F h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: hsl(212, 27%, 19%);
+    font-family: Fraunces, sans-serif;
+}
+
+.Emily-R p,
+.Thomas-S p,
+.Jennie-F p{
+    text-align: center;
+    color: hsl(210, 4%, 67%);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* sample section */
+.sample-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+}
+
+.sample-container img{
+    width: 380px;
+}
+
+/* footer */
+.footer{
+    background: hsl(169, 77%, 72%);
+}
+
+.footer .f-logo svg{
+    margin-left: 45rem;
+    margin-top: 5rem;    
+}
+
+.f-links ul{
+    display: flex;
+    margin: 2rem 38rem;
+}
+
+.f-links ul li{
+    list-style-type: none;
+    padding: 3rem 2rem;
+    color:  hsl(232, 10%, 55%);
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.socials{
+    margin-left: 43rem;
+    padding-bottom: 5rem;
+}
+.socials img{
+    padding: 0rem 1rem;
+}
+
+
+
+
+/* media query for mobile device */
+
+@media(max-width: 500px){
+    .main-container{
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .nav{
+        padding: 30px 20px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        position: absolute;
+        right: 5rem;
+        top: 15vh;
+        background: #fff;
+        width: 70%;
+        height: 70vh;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 99;
+
+    }
+
+    .nav-menu ul{
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+
+    .nav-menu ul li{
+        color: hsl(210, 4%, 67%);
+    }
+
+    .nav-menu .menu-btn button{
+        background-color: hsl(51, 100%, 49%);
+        font-size: 14px;
+        font-family: Fraunces, sans-serif;
+        font-weight: bold;
+    }
+
+    .header .heading h1{
+        font-size: 38px;
+        margin-left: 3rem;
+        text-align: center;
+        margin-top: 2rem;
+        font-family: Fraunces, sans-serif;
+    }
+
+    .arrow-down{
+        position: relative;
+        left: 14.5rem;
+        top: 2rem;
+    }
+
+    .slide{
+       right: -100%;
+    }
+    /* trasform */
+    .transform-container{
+        flex-direction: column-reverse;
+        margin-top: 21.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .transform-container .transform-text{
+        margin-top: 5rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .transform-text h2{
+        text-align: center;
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .transform-text p{
+        width: 300px;
+        margin-left: 6rem;
+    }
+
+    .transform-text a{
+        margin-left: 12rem;
+    }
+
+    .transform-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* stand out */
+
+    .standOut-container{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .standout-img img{
+        width: 500px;
+    }
+
+    .standout-text{
+        width: 400px;
+        margin-left: 3rem;
+        margin-top: 8rem;
+        height: 350px;
+    }
+
+    .standout-text h2{
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .standout-text p{
+        text-align: center;
+        margin-left: 3rem;
+        width: 300px;
+    }
+    .standout-text a{
+        margin-left: 10rem;
+    }
+
+    /* images */
+    .image-container{
+        flex-direction: column;
+        position: unset;
+    }
+
+    .graphics-content img{
+        width: 100vw;
+    }
+
+    .graphics-text{
+        top: 173rem;
+        margin-left: 4rem;
+    }
+
+    .photgraphy-content img{
+        width: 100vw;
+        margin-top: -1rem;
+    }
+
+    .photgraphy-text{
+        top: 210rem;
+        margin-left: 4rem;
+    }
+
+    .testimonial-container h3{
+        font-size: 18px;
+        margin-bottom: 4rem;
+    }
+
+    .testimonial-container .client-test{
+        flex-direction: column;
+        width: 100vw;
+        margin-left:  -1rem;
+    }
+
+    .Emily-R, .Thomas-S, .Jennie-F{
+        margin-bottom: 4rem;
+    }
+
+    .sample-container{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       width: 100%;
+    }
+
+    .sample-container img{
+        width: 255px;
+    }
+
+    .footer .f-logo svg{
+        margin-left: 12rem;
+    }
+
+    .f-links ul{
+        margin-left: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .socials{
+        margin-left: 10rem;
+        padding-bottom: 5rem;
+    }
+
+}
