@@ -333,18 +333,24 @@ margin-bottom: 2rem;
 }
 
 
-
+@media(max-width: 1000px){
+    .main-container{
+        width: 100%;
+    }
+}
 
 /* media query for mobile device */
 
 @media(max-width: 500px){
-    .main-container{
+    /* body{
         overflow-x: hidden;
-        width: 100%;
     }
+    .main-container{
+        width: 100%;
+    } */
 
     .nav{
-        padding: 30px 20px;
+        padding: 10px 20px;
     }
 
     .hamburger{
@@ -354,11 +360,11 @@ margin-bottom: 2rem;
     .nav-menu{
         flex-direction: column;
         position: absolute;
-        right: 5rem;
-        top: 15vh;
+        right: 3rem;
+        top: 4.5rem;
         background: #fff;
-        width: 70%;
-        height: 70vh;
+        width: 75%;
+        height: 90vh;
         align-items: center;
         justify-content: space-evenly;
         z-index: 99;
@@ -381,18 +387,25 @@ margin-bottom: 2rem;
         font-weight: bold;
     }
 
+    .header{
+        position: relative;
+    }
+
     .header .heading h1{
+        position: absolute;
+        top: 12rem;
         font-size: 38px;
-        margin-left: 3rem;
+        margin-left: 2rem;
         text-align: center;
         margin-top: 2rem;
         font-family: Fraunces, sans-serif;
     }
 
     .arrow-down{
-        position: relative;
-        left: 14.5rem;
-        top: 2rem;
+        position: absolute;
+        left: 12rem;
+        top: 28rem;
+        
     }
 
     .slide{
@@ -401,12 +414,11 @@ margin-bottom: 2rem;
     /* trasform */
     .transform-container{
         flex-direction: column-reverse;
-        margin-top: 21.5rem;
         margin-bottom: 2rem;
     }
 
     .transform-container .transform-text{
-        margin-top: 5rem;
+        margin-top: 3rem;
         width: 100%;
         height: 100%;
     }
@@ -419,11 +431,11 @@ margin-bottom: 2rem;
 
     .transform-text p{
         width: 300px;
-        margin-left: 6rem;
+        margin-left: 4rem;
     }
 
     .transform-text a{
-        margin-left: 12rem;
+        margin-left: 10rem;
     }
 
     .transform-img img{
@@ -438,7 +450,7 @@ margin-bottom: 2rem;
         margin-top: 3rem;
     }
     .standout-img img{
-        width: 500px;
+        width: 450px;
     }
 
     .standout-text{
@@ -449,23 +461,23 @@ margin-bottom: 2rem;
     }
 
     .standout-text h2{
-        font-size: 42px;
+        font-size: 40px;
         text-align: center;
+        margin-right: 5rem;
     }
 
     .standout-text p{
         text-align: center;
-        margin-left: 3rem;
         width: 300px;
     }
     .standout-text a{
-        margin-left: 10rem;
+        margin-left: 7rem;
     }
 
     /* images */
     .image-container{
         flex-direction: column;
-        position: unset;
+        position: relative;
     }
 
     .graphics-content img{
@@ -473,8 +485,8 @@ margin-bottom: 2rem;
     }
 
     .graphics-text{
-        top: 173rem;
-        margin-left: 4rem;
+        top: 23rem;
+        margin-left: 1rem;
     }
 
     .photgraphy-content img{
@@ -483,9 +495,12 @@ margin-bottom: 2rem;
     }
 
     .photgraphy-text{
-        top: 210rem;
-        margin-left: 4rem;
+        top: 60rem;
+        margin-left: 0.5rem;
     }
+
+
+    /* testimonials */
 
     .testimonial-container h3{
         font-size: 18px;
@@ -495,12 +510,26 @@ margin-bottom: 2rem;
     .testimonial-container .client-test{
         flex-direction: column;
         width: 100vw;
-        margin-left:  -1rem;
     }
 
-    .Emily-R, .Thomas-S, .Jennie-F{
-        margin-bottom: 4rem;
+    .Emily-R img, .Thomas-S img, .Jennie-F img {
+        margin-left: 5rem;
     }
+
+    .Emily-R .text, .Thomas-S .text, .Jennie-F .text {
+        margin-left: -11rem;
+        
+    }
+
+    .Emily-R h4, .Thomas-S h4, .Jennie-F h4 {
+        margin-right: 10rem;
+    }
+
+    .Emily-R p, .Thomas-S p, .Jennie-F p {
+        margin-right: 10rem;
+    }
+
+    /* sample */
 
     .sample-container{
        display: grid;
@@ -509,7 +538,7 @@ margin-bottom: 2rem;
     }
 
     .sample-container img{
-        width: 255px;
+        width: 208px;
     }
 
     .footer .f-logo svg{
